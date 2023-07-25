@@ -6,8 +6,8 @@ export const sharedItemsDiv = css`
     gap: 15px;
 `
 
-export const Section = styled.section`
-    margin: 30px;
+export const Main = styled.main`
+    margin: 20px;
 `
 
 export const TopDiv = styled.div`
@@ -65,14 +65,6 @@ export const ExtensionSpan = styled.span`
     font-weight: 600;
 `
 
-export const TextInput = styled.input`
-    width: 100%;
-    height: 35px;
-    border: 1.5px solid rgba(192, 192, 192, 0.4);
-    border-radius: 5px;
-    background: #33363b;
-`
-
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
@@ -81,19 +73,18 @@ export const Form = styled.form`
     margin-top: 10px;
 `
 
-export const DivCheckbox = styled.div`
+export const SpanContinue = styled.span`
+    font-size: 15px;
+    cursor: pointer;
+`
+
+export const Button = styled.button`
     width: 100%;
-    font-size: 13px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-`
-
-export const InputCheckbox = styled.input`
-    width: 18px;
-    height: 18px;
+    height: 40px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #C0C0C0;
+    color: #33363b;
     border: 1.5px solid rgba(192, 192, 192, 0.4);
-    border-radius: 5px;
-    background: aliceblue;
 `
-

@@ -10,8 +10,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
   html, body {
-    width: 400px;
-    height: 500px;
+    /* width: 400px;
+    height: 550px; */
+    width: 500px;
+    height: 400px;
     background-color: rgba(41,44,49,255);
   }
 `

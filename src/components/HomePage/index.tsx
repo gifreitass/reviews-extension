@@ -1,11 +1,14 @@
 import leftArrow from '../../assets/left-arrow.png'
 import globalIcon from '../../assets/global.png'
 import userIcon from '../../assets/user.png'
-import { DivProfileImage, Image, Section, WelcomeSpan, TopDiv, TopImageItemsDiv, TopItemsDiv, ExtensionSpan, TextInput, Form, DivContent, DivCheckbox, InputCheckbox } from './styles'
+import { DivProfileImage, Image, Main, WelcomeSpan, TopDiv, TopImageItemsDiv, TopItemsDiv, ExtensionSpan, Form, DivContent, SpanContinue, Button } from './styles'
+import InputText from '../InputText'
+import Checkbox from '../Checkbox'
+import InputRange from '../InputRange'
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
     return (
-        <Section>
+        <Main>
             <TopDiv>
                 <TopItemsDiv>
                     <Image src={leftArrow} alt="ícone de seta para a direção esquerda" />
@@ -22,40 +25,15 @@ const HomePage = () => {
                 <span>Bem vindo ao</span>
                 <ExtensionSpan>Importador de Reviews</ExtensionSpan>
                 <Form action="">
-                    <TextInput type="text" id='productLink' />
-                    <DivCheckbox>
-                        <InputCheckbox type="checkbox" id='onlyImages' />
-                        <label htmlFor="onlyImages">Somente com imagens</label>
-                        <InputCheckbox type="checkbox" id='reviewImage' />
-                        <label htmlFor="reviewImage">Uma imagem por review</label>
-                    </DivCheckbox>
-                    <TextInput type="text" id='pageLink' />
-                    <div>
-                        <div>
-                            <label htmlFor="numberReviews">Qtd. Reviews</label>
-                            <input type="range" id='numberReviews' />
-                        </div>
-                        <div>222</div>
-                    </div>
-                    <div>
-                        <label htmlFor="gender">Distribuição de gênero</label>
-                        <input type="range" id='gender' />
-                        <div>
-                            <div>
-                                <span>111</span>
-                                <span>Homens</span>
-                            </div>
-                            <div>
-                                <span>111</span>
-                                <span>Mulheres</span>
-                            </div>
-                        </div>
-                    </div>
-                    <span><u>Continuar de onde parei</u></span>
-                    <button>Importar</button>
+                    <InputText id='productLink'>Link do produto Shopee</InputText>
+                    <Checkbox />
+                    <InputText id='pageLink'>Link da sua página de vendas</InputText>
+                    <InputRange />
+                    <SpanContinue><u>Continuar de onde parei</u></SpanContinue>
+                    <Button>Importar</Button>
                 </Form>
             </DivContent>
-        </Section>
+        </Main>
     )
 }
 

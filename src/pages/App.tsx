@@ -1,8 +1,10 @@
-import HomePage from "../components/HomePage";
+// import HomePage from "../components/HomePage";
+import PlatformPage from "../components/PlatformPage";
 
 function App() {
   return (
-      <HomePage />
+      // <HomePage />
+      <PlatformPage />
   )
 }
 
