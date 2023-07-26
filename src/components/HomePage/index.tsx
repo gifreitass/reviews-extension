@@ -5,8 +5,14 @@ import { DivProfileImage, Image, Main, WelcomeSpan, TopDiv, TopImageItemsDiv, To
 import InputText from '../InputText'
 import Checkbox from '../Checkbox'
 import InputRange from '../InputRange'
+import store from '../../store'
+import { setStepAction } from '../../store/step/action'
 
 const HomePage: React.FC = () => {
+    const handleClick = () => {
+        store.dispatch(setStepAction('2'))
+    }
+
     return (
         <Main>
             <TopDiv>
@@ -30,7 +36,7 @@ const HomePage: React.FC = () => {
                     <InputText id='pageLink'>Link da sua página de vendas</InputText>
                     <InputRange />
                     <SpanContinue><u>Continuar de onde parei</u></SpanContinue>
-                    <Button>Importar</Button>
+                    <Button onClick={handleClick}>Importar</Button>
                 </Form>
             </DivContent>
         </Main>
