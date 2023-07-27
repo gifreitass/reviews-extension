@@ -14,7 +14,7 @@ const PlatformItem: React.FC<{ src: string, children: string }> = (props) => {
 
     return (
         <Div>
-            <Image isSelected={platform === children} onClick={handleClick} src={src} alt={`ícone da plataforma ${children}`} />
+            <Image isplatformselected={platform === children} onClick={handleClick} src={src} alt={`ícone da plataforma ${children}`} />
             <Span>{children}</Span>
         </Div>
     )

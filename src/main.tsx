@@ -16,7 +16,6 @@ const GlobalStyle = createGlobalStyle`
     /* width: 400px;
     height: 550px; */
     width: 550px;
-    height: 400px;
     background-color: rgba(41,44,49,255);
   }
 `

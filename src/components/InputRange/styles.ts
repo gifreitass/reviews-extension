@@ -16,10 +16,14 @@ export const DivTitleAndBar = styled.div`
 
 export const Input = styled.input`
     appearance: none;
-    background-color: #1b1c1c;
     height: 5px;
     outline: none;
     cursor: pointer;
+
+    background: ${({ value, max }) => {
+        const percentage = (Number(value) * 100) / Number(max)
+        return `linear-gradient(90deg, rgba(117,117,117,1) ${percentage}%, #1b1c1c ${percentage}%)`
+    }};
 
     &::-webkit-slider-thumb {
         appearance: none;

@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 interface PlatformItemProps {
-    isSelected: boolean
+    isplatformselected: boolean
 }
 
 export const Div = styled.div`
@@ -14,7 +14,7 @@ export const Div = styled.div`
 export const Image = styled.img<PlatformItemProps>`
     width: 50px;
     border-radius: 5px;
-    border: ${(props: PlatformItemProps) => (props.isSelected ? '3px solid grey' : 'none')};
+    border: ${(props) => (props.isplatformselected ? '3px solid grey' : 'none')};
 `
 
 export const Span = styled.span`

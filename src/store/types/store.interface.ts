@@ -1,3 +1,5 @@
+import { IReviewsDetails } from "../../types/reviewDetails.interface"
+
 export interface iAction {
     type: string,
     payload: any
@@ -9,5 +11,8 @@ export interface iState {
     },
     platform: {
         platformInformation: string
+    },
+    reviews: {
+        reviewsInformation: IReviewsDetails[]
     }
 }

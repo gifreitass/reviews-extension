@@ -43,6 +43,7 @@ export const DivButtons = styled.div`
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 25px;
 `
 
 export const ButtonPrev = styled.button`
@@ -58,5 +59,5 @@ export const ButtonNext = styled.button<ButtonNextProps>`
     background-color: #C0C0C0;
     color: #33363b;
     border: 1.5px solid rgba(192, 192, 192, 0.4);
-    cursor: ${(props: ButtonNextProps) => props.isPlatformSelected ? 'default' : 'pointer'};
+    cursor: ${(props) => props.isPlatformSelected ? 'default' : 'pointer'};
 `

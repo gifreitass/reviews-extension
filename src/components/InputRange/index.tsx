@@ -2,10 +2,15 @@ import { useState } from "react"
 import { DivReviews, DivRangeValue, DivTitleAndBar, TextRange, Input, DivGender, DivGenderDetails, DivGenderDetailsMan, DivGenderDetailsWoman } from "./styles"
 
 const InputRange = () => {
-    const [rangeValue, setRangeValue] = useState<string>('150')
+    const [rangeReviewsValue, setRangeReviewsValue] = useState<string>('150')
+    const [rangeGenderValue, setRangeGenderValue] = useState<string>('150')
 
-    const handleRangeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setRangeValue(event.target.value)
+    const handleRangeReviewsChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setRangeReviewsValue(event.target.value)
+    }
+
+    const handleRangeGenderhange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setRangeGenderValue(event.target.value)
     }
 
     return (
@@ -13,13 +18,13 @@ const InputRange = () => {
             <DivReviews>
                 <DivTitleAndBar>
                     <TextRange htmlFor="numberReviews">Qtd. Reviews</TextRange>
-                    <Input onChange={handleRangeChange} type="range" id='numberReviews' max='222' value={rangeValue} />
+                    <Input onChange={handleRangeReviewsChange} type="range" id='numberReviews' max='222' value={rangeReviewsValue} />
                 </DivTitleAndBar>
-                <DivRangeValue>{rangeValue}</DivRangeValue>
+                <DivRangeValue>{rangeReviewsValue}</DivRangeValue>
             </DivReviews>
             <DivGender>
                 <TextRange htmlFor="gender">Distribuição de gênero</TextRange>
-                <Input type="range" id='gender' />
+                <Input type="range" id='gender' max='222' value={rangeGenderValue} onChange={handleRangeGenderhange} />
                 <DivGenderDetails>
                     <DivGenderDetailsMan>
                         <span>111</span>

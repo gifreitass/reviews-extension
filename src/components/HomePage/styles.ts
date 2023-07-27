@@ -83,7 +83,7 @@ export const Button = styled.button`
     height: 40px;
     font-weight: 600;
     border-radius: 10px;
-    cursor: pointer;
+    cursor: ${(props) => props.disabled ? 'default' : 'pointer'};
     background-color: #C0C0C0;
     color: #33363b;
     border: 1.5px solid rgba(192, 192, 192, 0.4);
