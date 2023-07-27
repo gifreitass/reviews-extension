@@ -25,7 +25,7 @@ Para iniciá-lo no Chrome, siga os passos abaixo:
 npm install
 - Iniciar projeto:
 npm run build
-- Acesse a opção de Extensões ao lado da barra de pesquisa do Chrome > Gerenciar Extensões;
+- Acesse a opção de Extensões ao lado da barra de pesquisa no Chrome > Gerenciar Extensões;
 - No topo da página escolha a opção "Carregar sem compactação";
-- Selecione a pasta "dist" do projeto, assim a extensão estará disponível para você utilizar no navegador.
+- Selecione a pasta "dist" no projeto, assim a extensão estará disponível para você utilizar no navegador.
 ```
