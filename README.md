@@ -1,27 +1,31 @@
-# React + TypeScript + Vite
+## 📝 Reviews Extension Project:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido em React + TypeScript, com o objetivo da criação de uma extensão para o Google Chrome, que importa as avaliações de um produto da Shopee de acordo com o link inserido pelo usuário.
 
-Currently, two official plugins are available:
+## 📑 Alguns objetivos Alcançados:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    - Estruturar o projeto de acordo com a Arquitetura Front-end, utilizando arquivos de tipagem, integração e store management;
+    - Projeto dinâmico com o consumo de API externa;
+    - Utilização de React Redux;
+    - Utilização de styled-components.
 
-## Expanding the ESLint configuration
+## 🚀 Como executar
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Clone o projeto e acesse a pasta do mesmo.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+git clone https://github.com/gifreitass/reviews-extension.git
+cd reviews-extension
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Para iniciá-lo no Chrome, siga os passos abaixo:
+
+```bash
+- Instalar as dependências:
+npm install
+- Iniciar projeto:
+# npm run build
+- Acesse a opção de Extensões ao lado da barra de pesquisa do Chrome > Gerenciar Extensões;
+- No topo da página escolha a opção "Carregar sem compactação";
+- Selecione a pasta "dist" do projeto, assim a extensão estará disponível para você utilizar no navegador.
+```
